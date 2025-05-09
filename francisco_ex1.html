@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US"">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>francisco_ex1</title>
+</head>
+<body style="background-color:#FFFCF6">
+<style>
+div{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;}
+.container{
+	width: 100%;
+	min-height: 100vh;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+	overflow: hidden;}
+.navbar{
+	width: 100%;
+	display: flex;
+	align-items: center;}
+.logo{
+	width: 130px;
+	cursor:pointer;
+	margin: 30px 0;}
+.menu-icon{
+	width: 60px; 
+	cursor:pointer;}
+nav{
+	flex: 1;
+	text-align: right;}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;}
+nav ul li a{
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;}
+nav ul li a::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #CA3C66;
+	display: block;
+	margin: auto;
+	transition: 0.5s;}
+nav ul li a:hover::after{
+	width: 100%;}
+	
+.row{
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	margin: 20px 0;}
+.col-1{
+	flex-basis: 40%;
+	position: relative;
+	margin: 50px;}
+.col-1 h2{
+	font-size: 45px;}
+.col-1 h3{
+	font-size: 25px;
+	color: #CA3C66;
+	font-weight: 700;
+	margin: 20px 0 10px;}
+button{
+	width: 140px;
+	border: 0;
+	padding: 12px 10px;
+	outline: none;
+	background: linear-gradient(to right, #F7B7CA, #FFB97B);
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);}
+button a{
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;}
+.col-1::after{
+	content: '';
+	width: 10px;
+	height: 50%;
+	background: linear-gradient(#FFB97B, #F7B7CA);
+	position: absolute;
+	left: -50px;
+	top: 42px;
+	border-radius: 10px;}
+.col-2{
+	position: relative;
+	flex-basis: 50%;
+	display: flex;
+	align-items: center;}
+.col-2 .jellyfish{
+	width: 100%;}
+</style>
+  <div class="container">
+    <div class="navbar">
+	  <img src="logo.png" alt="logo" class="logo">
+	  <nav>
+	  <ul>
+	    <li><a href="francisco_ex1.html">Home</a></li>
+	    <li><a href="introduction.html">Introduction</a></li>
+		<li><a href="discussion.html">Discussion</a></li>
+		<li><a href="references.html">References</a></li>
+	  </ul> 
+	  </nav>
+	  <img src="menu-icon.png" alt="menu-icon" class="menu-icon">
+    </div>
+	<div class="row">
+    <div class="col-1">
+      <h2>All About Jellyfish</h2>
+	  <h3>Life is a beautiful, magnificent thing, even to a jellyfish.</h3>
+	  <br>
+	  <br>
+	  <br>
+      <button type="button"><a href="introduction.html">Learn more</a></button>
+    </div>
+	<div class="col-2">
+	  <img src="pic1.png" alt="jellyfish" class="jellyfish">
+    </div>
+  </div>
+  </div>
+</body> 
+</html>
